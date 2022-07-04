@@ -1,0 +1,504 @@
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+/* Header */
+header {
+  position: fixed;
+  z-index: 2;
+  background: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+.header-logo {
+  width: auto;
+  height: auto;
+  margin-right: 30px;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header-menu a {
+  color: black;
+  font-weight: bold;
+}
+.header-menu li {
+  padding: 10px;
+}
+.header-menu li:hover {
+  border-bottom: 1px solid black;
+}
+.header-menu li span {
+  color: red;
+}
+.header-logo a {
+  color: black;
+  font-size: 24px;
+}
+.header-input {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.header-input input {
+  width: 400px;
+  height: 25px;
+  background: 0;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid gray;
+  padding-left: 30px;
+}
+.header-input input::placeholder {
+  color: grey;
+  font-size: 16px;
+}
+.header-input i {
+  position: absolute;
+  color: grey;
+}
+.header-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  gap: 70px;
+  font-size: 17px;
+}
+.header-icon i {
+  color: rgb(79, 79, 79);
+}
+/* Header End */
+/* Slider-Component */
+.slider {
+  width: 100%;
+  height: 930px;
+  overflow: hidden;
+  position: relative;
+}
+.slider-content {
+  position: absolute;
+  display: flex;
+  animation: slider 10s infinite; 
+}
+.slider-item {
+  position: relative;
+  margin-top: -30px;
+}
+.slider-item img{
+  width: 2133px;
+  height: 930px;
+}
+.slider-item h3 {
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  top: 550px;
+  font-weight: bold;
+}
+.slider-item button {
+  width: 100%;
+  position: relative;
+  border: 0;
+  background: 0;
+  top: 680px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+}
+.slider-item button:hover {
+  color: rgb(222, 222, 222);
+  transition: 0.3s;
+}
+@keyframes slider {
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-2133px);
+  }
+  20% {
+    transform: translateX(-2133px);
+  }
+  30% {
+    transform: translateX(-4266px);
+  }
+  40% {
+    transform: translateX(-4266px);
+  }
+  50% {
+    transform: translateX(-6399px);
+  }
+  60% {
+    transform: translateX(-6399px);
+  }
+  70% {
+    transform: translateX(-8532px);
+  }
+  80% {
+    transform: translateX(-8532px);
+  }
+  /* Option */
+}
+/* Slider-Component End */
+/* Section */
+section {
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  height: 500px;
+  display: flex;
+}
+section .gomlek {
+  width: 800px;
+  opacity: 1;
+}
+section div {
+  width: 250px;
+  height: 500px;
+  background-image: url(./image/ressim-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+section div:hover {
+  width: 800px;
+  transition: 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+section div h6 {
+  position: relative;
+  left: 40px;
+  top: 320px;
+  color: white;
+  font-size: 24px;
+  display: none;
+}
+section div:hover h6 {
+  display: block;
+}
+section div:hover button {
+  display: block;
+}
+section button:hover {
+  color: rgb(190, 190, 190);
+  transition: 0.6s;
+}
+section div h4 {
+  position: relative;
+  top: 370px;
+  color: #fff;
+  font-size: 22px;
+  left: 40px;
+  display: block;
+}
+section div:hover h4 {
+  display: none;
+}
+section div button {
+  position: relative;
+  top: 440px;
+  background: 0;
+  border: 0;
+  cursor: pointer;
+  left: 30px;
+  color: #fff;
+  font-size: 16px;
+  display: none;
+}
+/* Secction End */
+/* Slider İmage */
+.slider-image{
+  width: 100%;
+  height: 700px;
+  background: #d3d3d3;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.slider-image img{
+  width: 425px;
+  height: 570px;
+  border-radius: 20px;
+}
+.slider-image div{
+  position: relative;
+}
+.slider-image .text{
+  position: absolute;
+  top: 400px;
+  left: 30px;
+  color: #fff;
+  font-size: 17px;
+}
+.slider-image p{
+  font-weight: bold;
+  font-size: 15px;
+}
+.slider-image h5{
+  font-weight: 100;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.slider-image button{
+  background: 0;
+  border: 0;
+  color: #fff;
+  width: auto;
+  height: 30px;
+  border-bottom: 1px solid #fff;
+}
+.slider-image i{
+  margin-left: 10px;
+}
+.slider-image button a:hover{
+  color: rgb(187, 186, 186);
+  transition: .3s;
+}
+.slider-image div img:hover{
+  box-shadow: 0px -4px 10px  2px gray;
+  cursor: pointer;
+  transition: .3s;
+}
+/* Sl,der-İmage End */
+h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+}
+.image-video{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.image-video video{
+  width: 400px;
+  height: 700px;
+}
+.image-video .text button{
+  background: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.image-video p{
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 4px;
+  
+}
+.image-video .text{
+  position: relative;
+}
+.image-video .text a{
+  color: #000;
+  font-size: 15px;
+}
+.image-video .text i{
+  position: absolute;
+  right: 0;
+  top: 10px
+}
+/* Swiper */
+.slider-container{
+  width: 87%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 50px;
+  background: #f9f9f9;
+  margin-top: 50px;
+}
+.slider-container .swiper-pagination{
+  position: relative;
+    margin-top: 40px;
+}
+.swiper-wrapper{
+  display: flex;
+  gap: 30px;
+}
+.swiper-wrapper img{
+  width: 500px;
+}
+.img_box{
+  position: relative;
+}
+.img_box img:hover{
+  cursor: pointer;
+}
+.img_box p{
+  margin: 0;
+}
+/* Swiper End */
+/* İnstagram Fallow */
+.instagram-fallow{
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  background: #f4f4f4;
+}
+.header-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.header-text h3{
+  margin: 0;
+  margin-top: 40px;
+}
+.header-text h3{
+  font-weight: bold;
+  font-size: 24px;
+}
+.header-text button{
+  width: 200px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.header-text a{
+  color: #000;
+}
+.header-text button:hover{
+  background: #000;
+}
+.header-text button:hover a{
+  color: #fff;
+  transition: .2s;
+}
+.slider-2{
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.slider-content-2{
+  width: 1000%;
+  left: 0;
+  display: flex;
+  animation: ınstagram 70s infinite;
+}
+.ınstagram-fallow img{
+  width: 500px;
+  height: 500px;
+}
+.ınstagram-fallow{
+  width: 500px;
+  position: relative;
+  height: 500px;
+}
+.ınstagram-fallow .name-icon{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -50px;
+}
+@keyframes ınstagram{
+  0% {
+    transform: translateX(0px);
+  }
+  10% {
+    transform: translateX(-500px);
+  }
+  20% {
+    transform: translateX(-1000px);
+  }
+  30% {
+    transform: translateX(-1500px);
+  }
+  40% {
+    transform: translateX(-2000px);
+  }
+  50% {
+    transform: translateX(-2500px);
+  }
+  60% {
+    transform: translateX(-3000px);
+  }
+  70% {
+    transform: translateX(-3500px);
+  }
+  80% {
+    transform: translateX(-4000px);
+  }
+  90% {
+    transform: translateX(-4500px);
+  }
+}
+.discover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.discover button{
+  background: 0;
+  border: 1px solid black;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+}
+.discover button a{
+  color: #000;
+}
+.discover button:hover{
+  background: black;
+  transition: .3s;
+  cursor: pointer;
+}
+.discover button:hover a{
+  color: #fff;
+}
+.uyeol{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.uyeol input{
+  border: 0;
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+  background: 0;
+  outline: none;
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 20px;
+}
+.uyeol input::placeholder{
+  padding-left: 100px;
+}
